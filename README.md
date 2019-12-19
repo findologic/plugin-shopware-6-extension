@@ -1,1 +1,1 @@
-# plugin-shopware-6-extension-
+# FINDOLOGIC Shopware 6 Plugin Override
