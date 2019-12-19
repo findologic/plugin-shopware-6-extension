@@ -1,0 +1,1 @@
+# plugin-shopware-6-extension-
