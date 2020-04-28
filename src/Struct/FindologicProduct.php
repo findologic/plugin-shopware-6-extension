@@ -2,6 +2,8 @@
 
 namespace FINDOLOGIC\ExtendFinSearch\Struct;
 
+use FINDOLOGIC\Export\Data\Attribute;
+use FINDOLOGIC\Export\Data\Property;
 use FINDOLOGIC\FinSearch\Struct\FindologicProduct as OriginalFindologicProduct;
 use Psr\Container\ContainerInterface;
 use Shopware\Core\Content\Product\ProductEntity;
@@ -21,19 +23,25 @@ class FindologicProduct extends OriginalFindologicProduct
         parent::__construct($product, $router, $container, $context, $shopkey, $customerGroups);
     }
 
-    /*
-     * Example on how to add custom properties to the product
-     */
     protected function setProperties(): void
     {
+        // Example of adding a new property:
+//        $this->properties[] = new Property(
+//            'Some property name',
+//            ['I am a property value!']
+//        );
+
         parent::setProperties();
     }
 
-    /**
-     * @inheritDoc
-     */
     protected function setAttributes(): void
     {
+        // Example of adding a new attribute:
+//        $this->attributes[] = new Attribute(
+//            'Some attribute name',
+//            ['I am an attribute value!']
+//        );
+
         parent::setAttributes();
     }
 }

@@ -1,14 +1,12 @@
-# FINDOLOGIC Shopware 6 Plugin Override
+# FINDOLOGIC Shopware 6 Extension Plugin
 
 This is a basic plugin skeleton which may be used to customize 
 [FINDOLOGIC Shopware 6 plugin](https://github.com/findologic/plugin-shopware-6).
+There are already pre-defined examples in [`src/Struct/FindologicProduct.php`](https://github.com/findologic/plugin-shopware-6-extension/blob/master/src/Struct/FindologicProduct.php).
 
 ## Requirements
 Note that in order to run this plugin you will need to install
 [FINDOLOGIC Shopware 6 plugin](https://github.com/findologic/plugin-shopware-6) first.
-
-## License
-Please see LICENSE file for more information.
 
 ## Update safety
 It is neccessary to mention that update safety means that the changes done to the search and export won't be lost due to
