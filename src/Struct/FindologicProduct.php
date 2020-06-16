@@ -3,6 +3,7 @@
 namespace FINDOLOGIC\ExtendFinSearch\Struct;
 
 use FINDOLOGIC\Export\Data\Attribute;
+use FINDOLOGIC\Export\Data\Item;
 use FINDOLOGIC\Export\Data\Property;
 use FINDOLOGIC\FinSearch\Struct\FindologicProduct as OriginalFindologicProduct;
 use Psr\Container\ContainerInterface;
@@ -18,9 +19,10 @@ class FindologicProduct extends OriginalFindologicProduct
         ContainerInterface $container,
         Context $context,
         string $shopkey,
-        array $customerGroups
+        array $customerGroups,
+        Item $item
     ) {
-        parent::__construct($product, $router, $container, $context, $shopkey, $customerGroups);
+        parent::__construct($product, $router, $container, $context, $shopkey, $customerGroups, $item);
     }
 
     protected function setProperties(): void
