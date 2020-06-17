@@ -1,8 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace FINDOLOGIC\ExtendFinSearch\Export;
 
 use FINDOLOGIC\ExtendFinSearch\Struct\FindologicProduct as FindologicProductOverride;
+use FINDOLOGIC\Export\Data\Item;
 use FINDOLOGIC\FinSearch\Exceptions\ProductHasNoCategoriesException;
 use FINDOLOGIC\FinSearch\Exceptions\ProductHasNoNameException;
 use FINDOLOGIC\FinSearch\Exceptions\ProductHasNoPricesException;
@@ -27,8 +30,9 @@ class FindologicProductFactory
         ContainerInterface $container,
         Context $context,
         string $shopkey,
-        array $customerGroups
+        array $customerGroups,
+        Item $item
     ): FindologicProductOverride {
-        return new FindologicProductOverride($product, $router, $container, $context, $shopkey, $customerGroups);
+        return new FindologicProductOverride($product, $router, $container, $context, $shopkey, $customerGroups, $item);
     }
 }
