@@ -9,6 +9,7 @@
             id="FINDOLOGIC\ExtendFinSearch\Export\FindologicProductFactory"
             decorates="FINDOLOGIC\FinSearch\Export\FindologicProductFactory"
             public="true"
+            decoration-on-invalid="ignore"
         >
         </service>
 
