@@ -17,12 +17,11 @@ class FindologicProduct extends OriginalFindologicProduct
         ProductEntity $product,
         RouterInterface $router,
         ContainerInterface $container,
-        Context $context,
         string $shopkey,
         array $customerGroups,
         Item $item
     ) {
-        parent::__construct($product, $router, $container, $context, $shopkey, $customerGroups, $item);
+        parent::__construct($product, $router, $container, $shopkey, $customerGroups, $item);
     }
 
     protected function setProperties(): void
