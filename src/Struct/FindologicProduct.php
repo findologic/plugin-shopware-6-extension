@@ -29,7 +29,7 @@ class FindologicProduct extends OriginalFindologicProduct
         // Example of adding a new property:
 //        $this->properties[] = new Property(
 //            'Some property name',
-//            ['I am a property value!']
+//            ['' => 'I am a property value!']
 //        );
 
         parent::setProperties();
