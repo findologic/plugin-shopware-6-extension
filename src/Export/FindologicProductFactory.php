@@ -28,11 +28,10 @@ class FindologicProductFactory
         ProductEntity $product,
         RouterInterface $router,
         ContainerInterface $container,
-        Context $context,
         string $shopkey,
         array $customerGroups,
         Item $item
     ): FindologicProductOverride {
-        return new FindologicProductOverride($product, $router, $container, $context, $shopkey, $customerGroups, $item);
+        return new FindologicProductOverride($product, $router, $container, $shopkey, $customerGroups, $item);
     }
 }
