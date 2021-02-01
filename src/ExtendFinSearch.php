@@ -2,10 +2,12 @@
 
 namespace FINDOLOGIC\ExtendFinSearch;
 
+use FINDOLOGIC\ExtendFinSearch\Export\DynamicProductGroupService;
 use FINDOLOGIC\FinSearch\FinSearch;
 use Shopware\Core\Framework\Plugin;
 use Shopware\Core\Framework\Plugin\Context\InstallContext;
 use Shopware\Core\Framework\Plugin\Exception\PluginNotInstalledException;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 class ExtendFinSearch extends Plugin
 {

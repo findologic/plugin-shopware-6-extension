@@ -13,5 +13,26 @@
         >
         </service>
 
+        <service
+            id="FINDOLOGIC\ExtendFinSearch\Export\DynamicProductGroupService"
+            public="true"
+        >
+            <argument type="service" id="service_container"/>
+            <argument type="service" id="cache.object"/>
+            <argument type="service" id="Symfony\Component\HttpFoundation\RequestStack"/>
+        </service>
+
+        <service
+            id="FINDOLOGIC\ExtendFinSearch\Controller\ExportController"
+            decorates="FINDOLOGIC\FinSearch\Controller\ExportController"
+        >
+            <argument type="service" id="service_container"/>
+            <argument type="service" id="logger"/>
+            <argument type="service" id="router"/>
+            <argument type="service" id="FINDOLOGIC\FinSearch\Export\HeaderHandler"/>
+            <argument type="service" id="Shopware\Core\System\SalesChannel\Context\SalesChannelContextFactory"/>
+            <argument type="service" id="cache.object"/>
+        </service>
+
     </services>
 </container>
