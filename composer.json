@@ -2,7 +2,7 @@
   "name": "findologic/plugin-shopware-6-extension",
   "description": "Extension to FINDOLOGIC Search & Navigation for Shopware 6",
   "type": "shopware-platform-plugin",
-  "version": "v1.0.1",
+  "version": "v2.0.0",
   "license": "GPL-3.0-or-later",
   "authors": [
     {
