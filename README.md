@@ -1,12 +1,11 @@
-# FINDOLOGIC Shopware 6 Extension Plugin
+# Findologic Shopware 6 Extension Plugin
 
-This is a basic plugin skeleton which may be used to customize 
-[FINDOLOGIC Shopware 6 plugin](https://github.com/findologic/plugin-shopware-6).
+This is a plugin skeleton which is used to customize the [Findologic Shopware 6 plugin](https://github.com/findologic/plugin-shopware-6).
 There are already pre-defined examples in [`src/Struct/FindologicProduct.php`](https://github.com/findologic/plugin-shopware-6-extension/blob/master/src/Struct/FindologicProduct.php).
 
 ## Requirements
 Note that in order to run this plugin you will need to install
-[FINDOLOGIC Shopware 6 plugin](https://github.com/findologic/plugin-shopware-6) first.
+[Findologic Shopware 6 plugin](https://github.com/findologic/plugin-shopware-6) first.
 
 ## Documentation
 
