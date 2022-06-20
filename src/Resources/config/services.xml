@@ -6,11 +6,28 @@
     <services>
 
         <service
-            id="FINDOLOGIC\ExtendFinSearch\Export\FindologicProductFactory"
-            decorates="FINDOLOGIC\FinSearch\Export\FindologicProductFactory"
+            id="FINDOLOGIC\ExtendFinSearch\Export\Adapters\AttributeAdapter"
+            decorates="FINDOLOGIC\FinSearch\Export\Adapters\AttributeAdapter"
             public="true"
             decoration-on-invalid="ignore"
         >
+            <argument type="service" id="service_container" />
+            <argument type="service" id="FINDOLOGIC\FinSearch\Struct\Config" />
+            <argument type="service" id="Shopware\Core\Framework\Adapter\Translation\Translator" />
+            <argument type="service" id="fin_search.sales_channel_context" />
+            <argument type="service" id="FINDOLOGIC\FinSearch\Export\UrlBuilderService" />
+            <argument type="service" id="fin_search.export_context" />
+        </service>
+
+        <service
+            id="FINDOLOGIC\ExtendFinSearch\Export\Adapters\DefaultPropertiesAdapter"
+            decorates="FINDOLOGIC\FinSearch\Export\Adapters\DefaultPropertiesAdapter"
+            public="true"
+            decoration-on-invalid="ignore"
+        >
+            <argument type="service" id="FINDOLOGIC\FinSearch\Struct\Config" />
+            <argument type="service" id="fin_search.sales_channel_context" />
+            <argument type="service" id="Shopware\Core\Framework\Adapter\Translation\Translator" />
         </service>
 
     </services>
