@@ -1,37 +1,37 @@
 {
-  "name": "findologic/plugin-shopware-6-extension",
-  "description": "Extension to FINDOLOGIC Search & Navigation for Shopware 6",
-  "type": "shopware-platform-plugin",
-  "version": "v3.0.0",
-  "license": "GPL-3.0-or-later",
-  "authors": [
-    {
-      "name": "FINDOLOGIC GmbH"
-    }
-  ],
-  "require": {
-    "php": ">7.2"
-  },
-  "extra": {
-    "shopware-plugin-class": "FINDOLOGIC\\ExtendFinSearch\\ExtendFinSearch",
-    "plugin-icon": "src/Resources/config/plugin.png",
-    "copyright": "(c) by FINDOLOGIC GmbH",
-    "label": {
-      "de-DE": "Erweiterung für FINDOLOGIC Suche & Navigation",
-      "en-GB": "Extension for FINDOLOGIC Search & Navigation"
+    "name": "findologic/plugin-shopware-6-extension",
+    "description": "Extension to FINDOLOGIC Search & Navigation for Shopware 6",
+    "type": "shopware-platform-plugin",
+    "version": "v4.0.0",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "FINDOLOGIC GmbH"
+        }
+    ],
+    "require": {
+        "php": ">7.2"
     },
-    "description": {
-      "de-DE": "FINDOLOGIC Plugin Erweiterung für das Shopware 6 e-commerce system",
-      "en-GB": "FINDOLOGIC Plugin Extension for Shopware 6 e-commerce system"
+    "extra": {
+        "shopware-plugin-class": "FINDOLOGIC\\ExtendFinSearch\\ExtendFinSearch",
+        "plugin-icon": "src/Resources/config/plugin.png",
+        "copyright": "(c) by FINDOLOGIC GmbH",
+        "label": {
+            "de-DE": "Erweiterung für FINDOLOGIC Suche & Navigation",
+            "en-GB": "Extension for FINDOLOGIC Search & Navigation"
+        },
+        "description": {
+            "de-DE": "FINDOLOGIC Plugin Erweiterung für das Shopware 6 e-commerce system",
+            "en-GB": "FINDOLOGIC Plugin Extension for Shopware 6 e-commerce system"
+        },
+        "supportLink": {
+            "de-DE": "https://support.findologic.com/hc/de/requests/new",
+            "en-GB": "https://support.findologic.com/hc/en/requests/new"
+        }
     },
-    "supportLink": {
-      "de-DE": "https://support.findologic.com/hc/de/requests/new",
-      "en-GB": "https://support.findologic.com/hc/en/requests/new"
+    "autoload": {
+        "psr-4": {
+            "FINDOLOGIC\\ExtendFinSearch\\": "src/"
+        }
     }
-  },
-  "autoload": {
-    "psr-4": {
-      "FINDOLOGIC\\ExtendFinSearch\\": "src/"
-    }
-  }
 }

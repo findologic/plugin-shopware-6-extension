@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace FINDOLOGIC\ExtendFinSearch\Export\Adapters;
 
 use FINDOLOGIC\Export\Data\Property;
-use FINDOLOGIC\FinSearch\Export\Adapters\DefaultPropertiesAdapter as OriginalDefaultPropertiesAdapter;
-use Shopware\Core\Content\Product\ProductEntity;
+use FINDOLOGIC\Shopware6Common\Export\Adapters\DefaultPropertiesAdapter as OriginalDefaultPropertiesAdapter;
+use Vin\ShopwareSdk\Data\Entity\Product\ProductEntity;
 
 class DefaultPropertiesAdapter extends OriginalDefaultPropertiesAdapter
 {
