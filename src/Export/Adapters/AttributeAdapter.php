@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace FINDOLOGIC\ExtendFinSearch\Export\Adapters;
 
 use FINDOLOGIC\Export\Data\Attribute;
-use FINDOLOGIC\FinSearch\Export\Adapters\AttributeAdapter as OriginalAttributeAdapter;
-use Shopware\Core\Content\Product\ProductEntity;
+use FINDOLOGIC\Shopware6Common\Export\Adapters\AttributeAdapter as OriginalAttributeAdapter;
+use Vin\ShopwareSdk\Data\Entity\Product\ProductEntity;
 
 class AttributeAdapter extends OriginalAttributeAdapter
 {
